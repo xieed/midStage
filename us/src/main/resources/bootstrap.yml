@@ -1,0 +1,16 @@
+server:
+  port: 8200
+spring:
+  application:
+    name: user_server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 123.57.5.59:8000
+        cluster-name: maluo
+  data:
+    mongodb:
+      host: 47.105.71.217
+      database: maluo_ms_us
+      username: root
+      password: maluo_ms_us
