@@ -7,8 +7,8 @@ import top.maluo.ms.us.dao.UserRepository;
 import top.maluo.ms.us.po.User;
 import top.maluo.ms.us.po.UserLoginInfo;
 import top.maluo.ms.us.util.SessionUtils;
-import top.maluo.util.rest.RestResponse;
-import top.maluo.util.rest.State;
+import top.maluo.ms.util.rest.RestResponse;
+import top.maluo.ms.util.rest.State;
 
 import java.util.Objects;
 

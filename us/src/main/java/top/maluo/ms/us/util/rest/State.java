@@ -1,4 +1,4 @@
-package top.maluo.util.rest;
+package top.maluo.ms.us.util.rest;
 
 /**
  * @className: State

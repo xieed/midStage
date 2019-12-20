@@ -1,0 +1,59 @@
+### Send POST request with body as parameters
+POST http://localhost:8100/user/register
+Content-Type: application/x-www-form-urlencoded
+
+userName=admin&pwd=admin00
+
+<> 2019-12-17T015239.200.txt
+<> 2019-12-16T065227.200.txt
+<> 2019-12-16T065154.200.txt
+<> 2019-12-16T064938.200.txt
+<> 2019-12-16T064811.200.txt
+
+### Send POST request with json body
+POST http://localhost:8100/test
+Content-Type: application/json
+
+{
+  "name": "rrrName",
+  "id": "rrrId"
+}
+
+
+### 登录测试
+GET http://localhost:8200/user/login/admin/admin
+Accept: application/json
+
+### 登陆测试POST
+POST http://dev.us.ms.maluo.com/user/login
+Content-Type: application/json
+
+{
+  "userName": "xxeedd",
+  "pwd": "admin"
+}
+
+<> 2019-12-19T075815.200.json
+<> 2019-12-19T050532.200.json
+<> 2019-12-19T050013.404.html
+<> 2019-12-19T045907.404.html
+<> 2019-12-18T011945.200.json
+<> 2019-12-18T011001.200.json
+
+###
+POST http://123.57.5.59:8200/user/register
+Content-Type: application/json
+
+{
+  "userName": "xxeedd",
+  "pwd": "admin"
+}
+
+<> 2019-12-19T043944.200.json
+<> 2019-12-18T011930.200.json
+<> 2019-12-18T011920.200.json
+<> 2019-12-18T011846.500.json
+<> 2019-12-18T011100.500.json
+<> 2019-12-18T011041.200.json
+
+###

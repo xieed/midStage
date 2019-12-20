@@ -3,27 +3,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>top.maluo.ms</groupId>
+        <artifactId>mid-stage-parent</artifactId>
+        <version>1.0.0-RELEASE</version>
     </parent>
     <groupId>top.maluo.ms</groupId>
     <artifactId>us</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
     <name>us</name>
     <description>mid_state.user_server</description>
-
-    <properties>
-        <java.version>1.8</java.version>
-        <nacos.version>0.9.0.RELEASE</nacos.version>
-    </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -34,18 +29,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <!--配置-->
 <!--        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
             <version>${nacos.version}</version>
         </dependency>-->
+
         <!--服务注册-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>${nacos.version}</version>
         </dependency>
+
         <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -61,9 +59,9 @@
         </dependency>
 
         <dependency>
-            <groupId>top.maluo</groupId>
+            <groupId>top.maluo.ms</groupId>
             <artifactId>util</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${util.version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -77,5 +75,17 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>deploymentRepo</id>
+            <url>http://47.105.71.217:8081/repository/maven-releases/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <id>snapshotsDeploymentRepo</id>
+            <url>http://47.105.71.217:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>

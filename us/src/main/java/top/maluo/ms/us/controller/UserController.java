@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import top.maluo.ms.us.po.User;
 import top.maluo.ms.us.service.UserService;
-import top.maluo.util.rest.RestResponse;
+import top.maluo.ms.util.rest.RestResponse;
 
 /**
  * @className: UserController

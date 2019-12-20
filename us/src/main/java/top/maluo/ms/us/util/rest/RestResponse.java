@@ -1,13 +1,8 @@
-package top.maluo.util.rest;
+package top.maluo.ms.us.util.rest;
 
-import com.alibaba.fastjson.JSONObject;
-import com.google.gson.Gson;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.http.converter.json.GsonFactoryBean;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * @className: RestResponse

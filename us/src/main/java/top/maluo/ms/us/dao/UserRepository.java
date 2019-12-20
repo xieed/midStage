@@ -10,7 +10,7 @@ import top.maluo.ms.us.po.User;
  * @date: 2019/12/16 17:33
  * @version: v1.0
  */
-public interface UserRepository extends MongoRepository<User, Long>, UserCustomRepository {
+public interface UserRepository extends MongoRepository<User, Long> {
     /**
      * 通过用户名和密码找到用户
      * @param userName 用户名
