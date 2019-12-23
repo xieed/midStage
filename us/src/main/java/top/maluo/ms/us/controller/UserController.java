@@ -2,7 +2,7 @@ package top.maluo.ms.us.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import top.maluo.ms.us.po.User;
+import top.maluo.ms.us.api.po.User;
 import top.maluo.ms.us.service.UserService;
 import top.maluo.ms.util.rest.RestResponse;
 
@@ -34,4 +34,25 @@ public class UserController {
     public RestResponse register(@RequestBody User user) {
         return service.register(user.getUserName(), user.getPwd());
     }
+
+    @PostMapping(value = "/logout")
+    public RestResponse logout(@RequestBody String sessionId) {
+        return service.logout(sessionId);
+    }
+
+    @PostMapping(value = "/checkSessionId")
+    public RestResponse checkSessionId(@RequestBody String sessionId) {
+        return service.checkSessionId(sessionId);
+    }
+
+    @GetMapping("/online")
+    public RestResponse onLine() {
+        return service.online();
+    }
+
+    @GetMapping("/runOnlineJob")
+    public RestResponse runOnlineJob() {
+        return service.runOnlineJob();
+    }
+
 }

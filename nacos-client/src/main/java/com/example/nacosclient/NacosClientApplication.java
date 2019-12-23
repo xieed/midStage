@@ -21,13 +21,11 @@ public class NacosClientApplication {
         SpringApplication.run(NacosClientApplication.class, args);
     }
 
-    //实例化 RestTemplate 实例
     @Bean
     public RestTemplate restTemplate() {
 
         return new RestTemplate();
     }
-
 
     @RestController
     class EchoController {

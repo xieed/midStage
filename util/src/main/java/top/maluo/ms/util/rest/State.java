@@ -49,4 +49,9 @@ public class State {
      */
     public static Integer BIZ_FAIL = -2;
 
+    /**
+     * 重新登录
+     */
+    public static Integer CHECK_SESSION_FAIL = -3;
+
 }

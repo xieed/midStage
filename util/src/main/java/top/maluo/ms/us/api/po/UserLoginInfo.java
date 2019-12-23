@@ -1,4 +1,4 @@
-package top.maluo.ms.us.po;
+package top.maluo.ms.us.api.po;
 
 import lombok.Data;
 

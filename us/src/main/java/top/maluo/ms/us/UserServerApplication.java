@@ -15,9 +15,4 @@ public class UserServerApplication {
         SpringApplication.run(UserServerApplication.class, args);
     }
 
-    @Bean
-    public IdWorker idWorker(){
-        return new IdWorker(1, 1);
-    }
-
 }
